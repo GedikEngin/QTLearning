@@ -1,3 +1,7 @@
+## Own Notes
+
+#
+
 ## Notes on QT by Scythe Studio
 
 ### Signals and Slots
@@ -71,10 +75,6 @@ one_signal -> n_signals
 ```
 
 signals and slots are flexible, they can be connected to multiple slots or signals but they need to match parameter types
-
-#
-
-## Own Notes
 
 #
 
