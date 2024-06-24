@@ -74,7 +74,11 @@ signals and slots are flexible, they can be connected to multiple slots or signa
 
 #
 
-### glossary
+## Own Notes
+
+#
+
+### Glossary
 
 functor:
 assignments of data that preserve structure, properties and type
