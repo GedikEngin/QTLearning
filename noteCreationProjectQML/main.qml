@@ -1,31 +1,36 @@
 import QtQuick 2.15
 import QtQuick.Controls 2.15
-import QtGraphicalEffects 1.15
 
 ApplicationWindow {
     visible: true
     width: 640
     height: 480
     title: "Hello Qt QML"
-    background: LinearGradient {
-        start: Qt.point(0, 0)
-        end: Qt.point(640, 480)
-        gradient: Gradient {
-            GradientStop { position: 0.0 ; color: "red"}
-            GradientStop { position: 1.0 ; color: "blue"}
-        }
+    background: Rectangle {
+        anchors.fill: parent
+        color: "gray" 
     }
 
-    Button {
-        text: "Click Me"
+    ListView {
+        width:200
+        height:300
         anchors.centerIn: parent
-        background: Rectangle {
-            color: "red"
-            radius: 1
-            }
 
-            onClicked: {
-            console.log("Button was clicked")
+        model: ListModel {
+        ListElement {name: "item 1"}
+        ListElement {name: "item 2"}
+        ListElement {name: "item 3"}
+        }
+
+        delegate: Item {
+            width: ListView.view.width
+            height: 40
+            Text{
+            text: name
+            font.pixelSize: 20
+            anchors.centerIn: parent
+            }
         }
     }
 }
+
