@@ -4,10 +4,13 @@
 
 int main(int argc, char *argv[])
 {
-    QCoreApplication a(argc, argv);
+    QCoreApplication a(argc, argv); // creates a QT core app
 
-    qInfo()<< "Hello World";
+    qInfo() << "Hello World";
     // similar to cout, used to display things in temrinal
 
-    return a.exec();
+    qInfo("Hello again");
+    // alternative way to use q debugs qInfo function
+
+    return a.exec(); // executes the application
 }
