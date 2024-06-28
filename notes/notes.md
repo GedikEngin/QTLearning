@@ -2,6 +2,10 @@
 
 #
 
+### interface
+
+inheriting multiple virtual functions from other classes to prevent meta object compiler issue being raised
+
 ## Notes on QT by Scythe Studio
 
 ### Signals and Slots
