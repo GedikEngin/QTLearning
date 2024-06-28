@@ -19,3 +19,6 @@ int main(int argc, char const *argv[])
     std::cout << "weight in kilograms: " << notebook.asKilograms() << "\n";
     return 0;
 }
+
+// almost like a class and its logic
+// but classes are better and more versatile
